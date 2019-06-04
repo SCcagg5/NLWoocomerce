@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+        bck-end:
+          build: ./back-end
+          ports:
+            - 8080:8080
+          tty: true
+          stdin_open: true
+          volumes:
+            - ./:/home/api/ #CODE THAT RUN WITHOUT PRODMOD
